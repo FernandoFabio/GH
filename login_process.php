@@ -1,33 +1,59 @@
 <?php
 session_start();
-$host = "containers-us-west-102.railway.app"; // endereço do servidor de banco de dados
-$user = "root"; // usuário do banco de dados
-$password = "trq5WQeR5hAMNWAEWDIT"; // senha do banco de dados
-$dbname = "railway"; // nome do banco de dados
 
-// cria a conexão com o banco de dados
-$conn = mysqli_connect($host, $user, $password, $dbname);
-
-// verifica se a conexão foi bem-sucedida
-if (!$conn) {
-	die("Conexão falhou: " . mysqli_connect_error());
+if (isset($_SESSION['usuario'])) {
+  header('Location: index.php');
+  exit();
 }
 
-// recebe as informações do formulário de login
-$username = $_POST['username'];
-$password = $_POST['password'];
+$erro = null;
 
-// verifica se o nome de usuário e senha estão corretos
-$sql = "SELECT * FROM usuarios WHERE username='$username' AND password='$password'";
-$result = mysqli_query($conn, $sql);
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $pdo = new PDO('mysql:host=localhost;dbname=gaminghouse;charset=utf8', 'root', '');
 
-// se o login foi bem-sucedido, redireciona para a página de índice
-if (mysqli_num_rows($result) == 1) {
-	$_SESSION['username'] = $username;
-	header("Location: index.php");
-} else {
-	echo "Nome de usuário ou senha incorretos.";
+  $stmt = $pdo->prepare('SELECT * FROM usuarios WHERE email = ?');
+  $stmt->execute([$_POST['email']]);
+  $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
+
+  if ($usuario && password_verify($_POST['senha'], $usuario['senha'])) {
+    $_SESSION['usuario'] = [
+      'id' => $usuario['id'],
+      'nome' => $usuario['nome'],
+      'email' => $usuario['email']
+    ];
+
+    header('Location: index.php');
+    exit();
+  } else {
+    $erro = 'Email ou senha incorretos';
+  }
 }
-
-mysqli_close($conn);
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <h1>Login</h1>
+
+  <?php if ($erro): ?>
+    <p><?= $erro ?></p>
+  <?php endif; ?>
+
+  <form method="POST">
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+    </div>
+
+    <button type="submit">Entrar</button>
+  </form>
+</body>
+</html>

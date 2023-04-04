@@ -1,0 +1,126 @@
+/* screen - votacao */
+
+.votacao {
+  background-color: #ebe1e1;
+  border: 1px none;
+  margin: 0px;
+  min-height: 1024px;
+  min-width: 1440px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.votacao .background-24HFUk {
+  background-color: #dfdede;
+  height: 1024px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 512px);
+  width: 100%;
+}
+
+.votacao .rectangle-1-24HFUk {
+  background-color: transparent;
+  height: 920px;
+  left: calc(50.00% - 568px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 410px);
+  width: 1142px;
+}
+
+.votacao .boto-inicio-24HFUk {
+  background-color: #fe8869;
+  border-radius: 30px;
+  height: 51px;
+  left: calc(50.00% - 521px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 376px);
+  width: 298px;
+}
+
+.votacao .title-TTcxn4 {
+  
+  color: #212121;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+
+  background-color: transparent;
+    height: auto;
+    left: calc(50.00% - 148px);
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: calc(50.00% - 24px);
+    width: auto;
+    width: 298px;
+    height: 51px;
+    border-radius: 30px;
+
+}
+
+.votacao .caminhao-24HFUk {
+  background-color: transparent;
+  height: 244px;
+  left: calc(50.00% - 130px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 493px);
+  width: 242px;
+}
+
+.votacao .frame-11-24HFUk {
+  background-color: transparent;
+  height: 486px;
+  left: calc(50.00% - 491px);
+  position: absolute;
+  top: calc(50.00% - 309px);
+  width: 838px;
+}
+
+.votacao .enviar-pontuao-24HFUk {
+  background-color: #fe8869;
+  border-radius: 30px;
+  height: 51px;
+  left: calc(50.00% - 564px);
+  top: calc(50.00% + 426px);
+  width: 298px;
+}
+
+.votacao .enviar-pontuao-BbxyAG {
+  
+  color: #212121;
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+  background-color: #fe8869;
+  height: auto;
+  left: calc(50.00% - -270px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 318px);
+  width: auto;
+  width: 298px;
+  height: 51px;
+  border-radius: 30px;
+  z-index: 99;
+}
+}
+
+.votacao .enviar-pontuao {
+  mix-blend-mode: normal;
+  position: absolute;
+}

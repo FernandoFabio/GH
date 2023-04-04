@@ -1,0 +1,138 @@
+/* screen - index */
+
+.index {
+  background-color: #ebe1e1;
+  border: 1px none;
+  margin: 0px;
+  min-height: 1024px;
+  min-width: 1440px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.index .background-IO3Fu5 {
+  background-color: #dfdede;
+  height: 1024px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 512px);
+  width: 100%;
+}
+
+.index .rectangle-1-IO3Fu5 {
+  background-color: #fefefe6b;
+  border: 1px dashed;
+  border-color: var(--black);
+  box-shadow: 0px 4px 4px #00000040;
+  height: 805px;
+  left: calc(50.00% - 565px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 411px);
+  width: 1135px;
+}
+
+.index .boto-logout-IO3Fu5 {
+  background-color: #fe8869;
+  border-radius: 30px;
+  height: 51px;
+  left: calc(50.00% - 564px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% + 412px);
+  width: 298px;
+}
+
+.index .title-NqMVGR {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 148px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: calc(50.00% - 24px);
+  width: auto;
+  width: 298px;
+  height: 51px;
+  border-radius: 30px;
+}
+
+.index .ver-resultado-IO3Fu5 {
+  background-color: #f9bd23;
+  border-radius: 30px;
+  height: 51px;
+  left: calc(50.00% + 224px);
+  top: calc(50.00% - 384px);
+  width: 298px;
+}
+
+.index .ver-resultado-Uxxozp {
+  background-color: transparent;
+  height: auto;
+  left: calc(50.00% - 82px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  text-align: left;
+  top: calc(50.00% - 18px);
+  width: auto;
+}
+
+.index .adicionar-indicado-IO3Fu5 {
+  background-color: #fe8869;
+  border-radius: 30px;
+  height: 51px;
+  left: calc(50.00% - 253px);
+  top: calc(50.00% + 412px);
+  width: 298px;
+}
+
+.index .adicionar-indicado-bjxMeM {
+  background-color: transparent;
+    height: auto;
+    left: calc(50.00% - 148px);
+    letter-spacing: 0.00px;
+    line-height: normal;
+    mix-blend-mode: normal;
+    position: absolute;
+    text-align: center;
+    top: calc(50.00% - 24px);
+    width: auto;
+    width: 298px;
+    height: 51px;
+    border-radius: 30px;
+}
+
+.index .frame-10-IO3Fu5 {
+  background-color: transparent;
+  height: 640px!important;
+  left: calc(50.00% - 490px);
+  position: absolute;
+  top: calc(50.00% - 231px)!important;
+  width: 997px;
+}
+
+.index .caminhao-IO3Fu5 {
+  background-color: transparent;
+  height: 244px;
+  left: calc(50.00% - 130px);
+  mix-blend-mode: normal;
+  position: absolute;
+  top: calc(50.00% - 493px);
+  width: 242px;
+}
+
+.index .adicionar-indicado {
+  mix-blend-mode: normal;
+  position: absolute;
+}
+
+.index .ver-resultado {
+  mix-blend-mode: normal;
+  position: absolute;
+}

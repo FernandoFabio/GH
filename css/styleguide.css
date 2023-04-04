@@ -1,0 +1,19 @@
+:root { 
+  --alto: #d9d9d9;
+  --black: #000000;
+  --log-cabin: #212121;
+ 
+  --font-size-m: 24px;
+ 
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poppins-medium-log-cabin-24px {
+  color: var(--log-cabin);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+:root {
+}
