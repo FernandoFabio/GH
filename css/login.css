@@ -94,38 +94,38 @@
 
 .login .ellipse-1-b8DrbD {
   background-color: transparent;
-  /* border: 1px solid; */
-  border-color: #020202;
+  border: 1px solid;
+  border-color: var(--black);
   border-radius: 44px;
-  height: 298px;
-  left: calc(50.00% - 487px);
+  height: 88px;
+  left: calc(50.00% - 43px);
   position: absolute;
-  top: calc(50.00% + 118px);
-  width: 584px;
+  top: calc(50.00% + 214px);
+  width: 88px;
 }
 
 .login .ellipse-3-b8DrbD {
   background-color: transparent;
-  /* border: 1px solid; */
-  border-color: #020202;
+  border: 1px solid;
+  border-color: var(--black);
   border-radius: 44px;
-  height: 298px;
-  left: calc(50.00% - 101px);
+  height: 88px;
+  left: calc(50.00% + 127px);
   position: absolute;
-  top: calc(50.00% + 118px);
-  width: 584px;
+  top: calc(50.00% + 214px);
+  width: 88px;
 }
 
 .login .ellipse-2-b8DrbD {
   background-color: transparent;
-  /* border: 1px solid; */
+  border: 1px solid;
   border-color: #020202;
   border-radius: 44px;
-  height: 298px;
-  left: calc(50.00% - 299px);
+  height: 88px;
+  left: calc(50.00% - 213px);
   position: absolute;
-  top: calc(50.00% + 118px);
-  width: 584px;
+  top: calc(50.00% + 214px);
+  width: 88px;
 }
 
 .login .line-1-b8DrbD {
@@ -151,7 +151,7 @@
 .login .frame-9-b8DrbD {
   background-color: transparent;
   height: 253px;
-  left: calc(50.00% + -146px);
+  left: 572px;
   position: absolute;
   top: 9px;
   width: 296px;

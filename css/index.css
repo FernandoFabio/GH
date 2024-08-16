@@ -50,17 +50,14 @@
 .index .title-NqMVGR {
   background-color: transparent;
   height: auto;
-  left: calc(50.00% - 148px);
+  left: calc(50.00% - 42px);
   letter-spacing: 0.00px;
   line-height: normal;
   mix-blend-mode: normal;
   position: absolute;
-  text-align: center;
-  top: calc(50.00% - 24px);
+  text-align: left;
+  top: calc(50.00% - 18px);
   width: auto;
-  width: 298px;
-  height: 51px;
-  border-radius: 30px;
 }
 
 .index .ver-resultado-IO3Fu5 {
@@ -94,28 +91,25 @@
 
 .index .adicionar-indicado-bjxMeM {
   background-color: transparent;
-    height: auto;
-    left: calc(50.00% - 148px);
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: center;
-    top: calc(50.00% - 24px);
-    width: auto;
-    width: 298px;
-    height: 51px;
-    border-radius: 30px;
+  height: auto;
+  left: calc(50.00% - 115px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  text-align: left;
+  top: calc(50.00% - 18px);
+  width: auto;
 }
 
 .index .frame-10-IO3Fu5 {
   background-color: transparent;
-  height: 640px!important;
+  height: 627px;
   left: calc(50.00% - 490px);
   position: absolute;
-  top: calc(50.00% - 231px)!important;
+  top: calc(50.00% - 249px);
   width: 997px;
 }
+
+
 
 .index .caminhao-IO3Fu5 {
   background-color: transparent;

@@ -32,13 +32,13 @@ $lista = array_slice($indicados, 3);
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="caminhao.png" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link rel="shortcut icon" type="image/png" href="img/caminhao-maior-1@2x.png" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/resultados.css" />
     <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
     <link rel="stylesheet" type="text/css" href="css/globals.css" />
@@ -48,67 +48,40 @@ $lista = array_slice($indicados, 3);
     <div class="resultados screen">
       <div class="background-xGv8qE"></div>
       <div class="rectangle-1-xGv8qE"></div>
-      <h1 class="title-xGv8qE poppins-medium-log-cabin-24px">Filtro</h1>
-      <div class="frame-3-xGv8qE"></div>
-
-      <form class="boto-inicio-xGv8qE method="GET" action="index.php">
-    <button style="background-color: transparent;
-    height: auto;
-    left: calc(50.00% - 148px);
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: center;
-    top: calc(50.00% - 24px);
-    width: auto;
-    width: 298px;
-    height: 51px;
-    border-radius: 30px;"class="inicio-CC1LTx poppins-medium-log-cabin-24px"  type="submit">Voltar para o início</button>
-  </form>
-
-  <form class="boto-logout-xGv8qE" method="POST" action="logout.php">
-    <button class="logout-uFBVxc poppins-medium-log-cabin-24px" type="submit">Logout</button>
-  </form>
-
-  <form method="GET" action="resultados.php">
+      <h1 style="font-size:24px; font-weight:bold" class="title-xGv8qE poppins-medium-log-cabin-24px">Filtro</h1>
+      
+     
+      <img class="caminhao-xGv8qE" src="img/caminhao@2x.png" alt="caminhao" />
     
-    <select style="font-family: var(--font-family-poppins);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;"class="frame-3-xGv8qE" name="categoria" id="categoria">
-      <option value="">Todas as categorias</option>
+      <div class="top3-xGv8qE">
+        <div class="rectangle-5-iKB75m"></div>
+        <div class="ellipse-8-iKB75m"></div>
+      </div>
+
+      <form method="GET" action="resultados.php">
+    <label for="categoria">Filtrar por categoria:</label>
+    <select class="frame-3-xGv8qE" name="categoria" id="categoria">
+      <option style="font-size:24px; font-weight:bold" value="">Todas as categorias</option>
       <?php foreach ($categorias as $categoria): ?>
-        <option value="<?= $categoria['id'] ?>" <?= (isset($_GET['categoria']) && $_GET['categoria'] == $categoria['id']) ? 'selected' : '' ?>><?= $categoria['nome'] ?></option>
+        <option style="font-size:24px; font-weight:bold" value="<?= $categoria['id'] ?>" <?= (isset($_GET['categoria']) && $_GET['categoria'] == $categoria['id']) ? 'selected' : '' ?>><?= $categoria['nome'] ?></option>
       <?php endforeach; ?>
     </select>
-    <button style="font-family: var(--font-family-poppins);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;"class=" filtro" type="submit">Filtrar</button>
+    <button  class="boto-inicio-xGv8qE2"type="submit">Filtrar</button>
   </form>
 
-  <h2>Lista</h2>
-  <ul class="lista flex-container">
-    <?php foreach ($lista as $indicado): ?>
-      <li class="alert alert-primary"style="font-family: var(--font-family-poppins);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;">
-        <?= $indicado['nome'] ?> - <?= $indicado['pontuacao'] ?>
-      </li>
-    <?php endforeach; ?>
-  </ul>
+   <form method="POST" action="logout.php">
+    <button style="font-size:24px; font-weight:bold" class="boto-logout-xGv8qE" type="submit">Logout</button>
+  </form>
 
+  <form method="GET" action="index.php">
+    <button style="font-size:24px; font-weight:bold" class="boto-inicio-xGv8qE" type="submit">Voltar para o início</button>
+  </form>
 
-  <ol>
+  <ol class="podio">
     <?php foreach ($podio as $posicao => $indicado): ?>
-      <li style="font-family: var(--font-family-poppins);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 500;"class="lista2">
+      <li>
         <?php if ($posicao == 0): ?>
-          <strong   ><?= $indicado['nome'] ?> - <?= $indicado['pontuacao'] ?></strong>
+          <strong><?= $indicado['nome'] ?> - <?= $indicado['pontuacao'] ?></strong>
         <?php elseif ($posicao == 1): ?>
           <em><?= $indicado['nome'] ?> - <?= $indicado['pontuacao'] ?></em>
         <?php else: ?>
@@ -118,41 +91,31 @@ $lista = array_slice($indicados, 3);
     <?php endforeach; ?>
   </ol>
 
-      <img class="caminhao-xGv8qE" src="img/caminhao@2x.png" alt="caminhao" />
-     
-      <div class="top3-xGv8qE">
-        <div class="rectangle-5-iKB75m"></div>
-        <img  style="height: 172px; left: calc(50.00% - 289px);  mix-blend-mode: normal; position: absolute; top: calc(50.00% - 81px);width: 358px;"src="img/terceiro.png">
-      </div>
+  
+  <ul  class="lista">
+    <?php foreach ($lista as $indicado): ?>
+      <li style="font-size:16px; font-weight:bold" class="alert alert-warning">
+        <?= $indicado['nome'] ?> - <?= $indicado['pontuacao'] ?>
+      </li>
+    <?php endforeach; ?>
+  </ul>
+
+
+
 
       <div class="top2-xGv8qE">
         <div class="rectangle-3-wt65nu"></div>
-    <img style="    height: 186px;
-    left: calc(50.00% - 326px);
-    mix-blend-mode: normal;
-    position: absolute;
-    top: calc(50.00% - 90px);
-    width: 381px;" src="img/segundo.png">
+        <div class="ellipse-6-wt65nu"></div>
       </div>
-
       <div class="top1-xGv8qE">
-        <div class="rectangle-2-L2FvmN"> </div>
-      <img style="height: 214px;
-    left: calc(50.00% - 393px);
-    mix-blend-mode: normal;
-    position: absolute;
-    top: calc(50.00% - 102px);
-    width: 435px;
-    width: 441px;" src="img/primeiro.png">
+        <div class="rectangle-2-L2FvmN"></div>
+        <div class="ellipse-5-L2FvmN"></div>
       </div>
-      
     </div>
   </body>
 </html>
 
 
-
-
-
   
 
+  

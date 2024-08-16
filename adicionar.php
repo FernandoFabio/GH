@@ -27,66 +27,32 @@ $categorias = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="caminhao.png" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/indicados.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleguide.css" />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
-  </head>
-  <body style="margin: 0; background: #ebe1e1">
-    <input type="hidden" id="anPageName" name="page" value="indicados" />
-    <div class="indicados screen">
-      <div class="background-aj9o9J"></div>
-      <div class="rectangle-1-aj9o9J"></div>
-      <h1 class="title-aj9o9J poppins-medium-log-cabin-24px">Nome</h1>
-      <div class="categoria-aj9o9J categoria poppins-medium-log-cabin-24px">Categoria</div>
-      
-      
-
-      <form class="boto-inicio-aj9o9J" method="GET" action="index.php">
-    <button class="inicio-CQU0qM poppins-medium-log-cabin-24px" type="submit">Voltar para o início</button>
-  </form>
+<head>
+  <title>Adicionar Indicado</title>
+</head>
+<body>
+  <h1>Adicionar Indicado</h1>
 
   <form method="POST">
     <label>
-     
-      <input style="font-family: var(--font-family-poppins);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 500;"class="nome-aj9o9J" type="text" name="nome">
+      Nome:
+      <input type="text" name="nome">
     </label>
     <br>
     <label>
-      
-      <select style="font-family: var(--font-family-poppins);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;"class="categoria-QNCZni categoria" name="categoria">
+      Categoria:
+      <select name="categoria">
         <?php foreach ($categorias as $categoria): ?>
           <option value="<?= $categoria['id'] ?>"><?= $categoria['nome'] ?></option>
         <?php endforeach; ?>
       </select>
     </label>
     <br>
-    <button style="font-family: var(--font-family-poppins);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 500;" class="boto-adicionar-aj9o9J" type="submit">Adicionar</button>
+    <button type="submit">Adicionar</button>
   </form>
 
-      
-      <img class="ellipse-4-aj9o9J" src="img/ellipse-4@2x.png" alt="Ellipse 4" />
-     
-    </div>
-  </body>
+  <form method="GET" action="index.php">
+    <button type="submit">Voltar para o início</button>
+  </form>
+</body>
 </html>
-
-
-
-
-
-
-

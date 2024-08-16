@@ -96,17 +96,14 @@
 .indicados .inicio-CQU0qM {
   background-color: transparent;
   height: auto;
-  left: calc(50.00% - 148px);
+  left: calc(50.00% - 32px);
   letter-spacing: 0.00px;
   line-height: normal;
   mix-blend-mode: normal;
   position: absolute;
-  text-align: center;
-  top: calc(50.00% - 24px);
+  text-align: left;
+  top: calc(50.00% - 18px);
   width: auto;
-  width: 298px;
-  height: 51px;
-  border-radius: 30px;
 }
 
 .indicados .ellipse-4-aj9o9J {
@@ -141,7 +138,6 @@
   text-align: left;
   top: calc(50.00% - 18px);
   width: auto;
-  
 }
 
 .indicados .categoria {

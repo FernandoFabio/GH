@@ -25,7 +25,7 @@
 
 .votacao .rectangle-1-24HFUk {
   background-color: transparent;
-  height: 920px;
+  height: 812px;
   left: calc(50.00% - 568px);
   mix-blend-mode: normal;
   position: absolute;
@@ -45,27 +45,21 @@
 }
 
 .votacao .title-TTcxn4 {
-  
+  background-color: transparent;
   color: #212121;
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 500;
-
-  background-color: transparent;
-    height: auto;
-    left: calc(50.00% - 148px);
-    letter-spacing: 0.00px;
-    line-height: normal;
-    mix-blend-mode: normal;
-    position: absolute;
-    text-align: center;
-    top: calc(50.00% - 24px);
-    width: auto;
-    width: 298px;
-    height: 51px;
-    border-radius: 30px;
-
+  height: auto;
+  left: calc(50.00% - 32px);
+  letter-spacing: 0.00px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: calc(50.00% - 18px);
+  width: auto;
 }
 
 .votacao .caminhao-24HFUk {
@@ -83,7 +77,16 @@
   height: 486px;
   left: calc(50.00% - 491px);
   position: absolute;
-  top: calc(50.00% - 309px);
+  top: calc(50.00% - 169px);
+  width: 838px;
+}
+
+.lista {
+  background-color: transparent;
+  height: 645px;
+  left: calc(50.00% - 491px);
+  position: absolute;
+  top: calc(50.00% - 247px);
   width: 838px;
 }
 
@@ -97,27 +100,19 @@
 }
 
 .votacao .enviar-pontuao-BbxyAG {
-  
+  background-color: transparent;
   color: #212121;
   font-family: var(--font-family-poppins);
   font-size: var(--font-size-m);
   font-style: normal;
   font-weight: 500;
-  background-color: #fe8869;
   height: auto;
-  left: calc(50.00% - -270px);
+  left: calc(50.00% - 107px);
   letter-spacing: 0.00px;
   line-height: normal;
-  mix-blend-mode: normal;
-  position: absolute;
-  text-align: center;
-  top: calc(50.00% - 318px);
+  text-align: left;
+  top: calc(50.00% - 18px);
   width: auto;
-  width: 298px;
-  height: 51px;
-  border-radius: 30px;
-  z-index: 99;
-}
 }
 
 .votacao .enviar-pontuao {
